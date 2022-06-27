@@ -1,0 +1,21 @@
+{
+  "name": "learn_devops",
+  "version": "1.0.0",
+  "description": "node server.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DongHY1/learn_devops.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DongHY1/learn_devops/issues"
+  },
+  "homepage": "https://github.com/DongHY1/learn_devops#readme"
+}
