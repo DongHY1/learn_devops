@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "serve ."
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/DongHY1/learn_devops/issues"
   },
-  "homepage": "https://github.com/DongHY1/learn_devops#readme"
+  "homepage": "https://github.com/DongHY1/learn_devops#readme",
+  "dependencies": {
+    "serve": "^13.0.4"
+  }
 }
