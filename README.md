@@ -16,3 +16,7 @@ redirect:重定向URL地址
     'Content-Length' : html.length
 });
 ```
+## 使用Docker部署
++ 写Dockerfile
++ Build构建镜像
++ 生成容器，添加端口号映射（可以通过docker-compose.yaml简化这一步）
