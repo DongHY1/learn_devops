@@ -1,9 +1,11 @@
 const http = require('http');
 const fs = require('fs');
 const html = fs.readFileSync('./index.html')
-const server =http.createServer((req,res)=>{
+http.createServer((req,res)=>{
+  res.writeHead(200, {
+    'Content-Length' : html.length
+});
   fs.createReadStream('./index.html').pipe(res)
-})
-server.listen(3000,()=>{
+}).listen(3000,()=>{
   console.log('PORT:3000 LISTEN!')
 })
