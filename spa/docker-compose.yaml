@@ -1,0 +1,7 @@
+version: "3"
+services:
+  simple:
+    build:
+      context: .
+    ports:
+      - 4000:80
