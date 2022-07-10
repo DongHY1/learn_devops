@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-
+import dotenv from "dotenv";
+dotenv.config();
+console.log(process.env.BASE)
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:'https://spa-1306502097.cos.ap-guangzhou.myqcloud.com/',
+  base:process.env.BASE,
   plugins: [vue()]
 })
