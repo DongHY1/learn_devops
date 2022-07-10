@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "oss": "node ./cos.js"
+    "oss": "node ./cos.mjs",
+    "see":"npm run build && npm run oss && npm run preview"
   },
   "dependencies": {
     "cos-nodejs-sdk-v5": "^2.11.12",

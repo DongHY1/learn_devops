@@ -3,9 +3,6 @@ services:
   simple:
     build:
       context: .
-      args:
-        - SECRET_ID
-        - SECRET_KEY
     ports:
       - 4000:80
 
