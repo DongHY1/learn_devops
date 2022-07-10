@@ -1,7 +1,10 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+# SPA应用部署
+## 路由问题 (History模式)
+通过nginx配置解决
+```
+    location / {
+        try_files  $uri $uri/ /index.html;
+    }
+```
+## 性能优化
+gzip,开启缓存,带hash的缓存一年(在打包后的assets目录下,nginx中配置)
