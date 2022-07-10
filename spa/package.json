@@ -5,9 +5,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "oss": "node ./cos.js"
   },
   "dependencies": {
+    "cos-nodejs-sdk-v5": "^2.11.12",
+    "dotenv": "^16.0.1",
+    "p-queue": "^7.2.0",
+    "readdirp": "^3.6.0",
     "vue": "^3.2.25",
     "vue-router": "4"
   },

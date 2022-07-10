@@ -1,5 +1,5 @@
 FROM node:14-alpine as builder
-
+# OSS文件上传
 WORKDIR /code
 
 # 单独分离 package.json，是为了安装依赖可最大限度利用缓存
@@ -8,7 +8,7 @@ RUN yarn
 
 ADD src /code/src
 ADD . /code
-RUN npm run build
+RUN npm run build && npm run oss
 
 # 选择更小体积的基础镜像
 FROM nginx:alpine
