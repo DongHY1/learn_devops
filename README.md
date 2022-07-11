@@ -19,4 +19,4 @@ gzip,开启缓存,带hash的缓存一年(在打包后的assets目录下,nginx中
 + 修改vite.config.js的base地址到OSS URL
 + 运用腾讯云官方提供的SDK将文件部署到OSS中,具体见cos.mjs
 + 在package.json中写脚本,当build后->将dist目录上传到OSS (cos.mjs)
-+ TODO:删除OSS仓库中assets多余的文件脚本
++ diff算法删除OSS仓库中assets多余的文件脚本
