@@ -7,7 +7,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "oss": "node ./cos.mjs",
-    "see":"npm run build && npm run oss && npm run preview"
+    "upload":"npm run build && npm run oss"
   },
   "dependencies": {
     "cos-nodejs-sdk-v5": "^2.11.12",

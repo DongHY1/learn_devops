@@ -8,7 +8,7 @@ RUN yarn
 
 ADD src /code/src
 ADD . /code
-RUN npm run build && npm run oss
+RUN npm run upload
 
 # 选择更小体积的基础镜像
 FROM nginx:alpine
